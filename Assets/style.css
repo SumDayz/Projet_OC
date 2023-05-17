@@ -1,0 +1,99 @@
+@media (max-width:500px) {
+.navbar{
+    text-align: center ;
+    color:black;
+    
+    
+}
+
+.navbar__logo{
+    height: 40px;
+    padding: 1%;
+}
+
+.localisation{
+    display: flex;
+    flex-direction: row;
+    background-color:#EAEAEA ;
+    justify-content:center;
+    border-top: solid #D6D6D6;
+    
+}
+.localisation__logo{
+    height: 30px;
+    padding-top: 5%;
+    padding-right: 5%;
+}
+
+.w_full{
+    width: 100%;
+}
+.center_text{
+    text-align: center;
+}
+.bouton{
+    
+    background:linear-gradient(#FF79DA,#9356DC);
+    border: none;
+    border-radius: 2rem 2rem 2rem 2rem;
+    color: white;
+    padding: 5px ;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 65%;
+}
+.explorer{
+    background-color: #F6F6F6;
+    padding-bottom: 15%;
+}
+.bouton_arrondie{
+    background-color: #F6F6F6;
+    border-radius: 1rem 1rem 1rem 1rem;
+    margin: 4%;
+    padding: 2%;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.card{
+    background-color: white;
+    border-radius: 1rem 1rem 1rem 1rem;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+    padding-bottom: 1%;
+    margin: 3%;
+    
+}
+.card_img{
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem 1rem 0 0;
+    
+}
+.card:hover{
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);  
+}
+.top-right {
+    position: absolute;
+    right: 28px;
+    color: #008766;
+    background-color: #99E2D0;
+    padding:1%;
+    margin-top: 2%;
+    border-radius: 0.25em 0.25em 0.25em 0.25em;
+  }
+  .all-card{
+    padding-bottom: 2%;
+  }
+  .white{
+    width: 30%;
+    filter: invert(100%);
+  }
+  .bg_color_dark{
+    background-color:#353535;
+    padding: 8%;
+  }
+  .color_white{
+    color: white;
+  }
+}
