@@ -1,3 +1,299 @@
+body p, body h1, body h2, body h3, body h4, body a {
+  font-family: "Roboto", sans-serif;
+}
+
+.title {
+  font-family: "Shrikhand", sans-serif;
+  font-style: normal;
+}
+
+.navbar {
+  text-align: center;
+  width: 100%;
+}
+.navbar .navbar__logo {
+  height: 40px;
+  padding: 1%;
+}
+
+.localisation {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  background-color: #EAEAEA;
+  justify-content: center;
+  position: relative;
+  gap: 1rem;
+}
+
+.explorer {
+  background-color: #F6F6F6;
+  padding-bottom: 4%;
+}
+
+.center_text {
+  text-align: center;
+}
+
+.bouton {
+  background: linear-gradient(#FF79DA, #9356DC);
+  border: none;
+  border-radius: 2rem 2rem 2rem 2rem;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 25%;
+}
+.bouton:hover {
+  box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.4);
+  background: linear-gradient(356deg, #a061de 0%, #ac87da 33%, #ff83dd 100%);
+}
+
+.bouton_arrondie {
+  background-color: #F6F6F6;
+  border-radius: 1.5rem 1.5rem 1.5rem 1.5rem;
+  margin: 2%;
+  padding: 1%;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+
+.all-card {
+  padding-bottom: 2%;
+}
+
+.card {
+  background-color: white;
+  border-radius: 1rem 1rem 1rem 1rem;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+  padding-bottom: 1%;
+  margin: 3%;
+  width: 100%;
+  position: relative;
+  text-decoration: none;
+  color: #353535;
+}
+.card .card__img {
+  height: 250px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.flex_responsive {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.top-right {
+  position: absolute;
+  color: #008766;
+  background-color: #99E2D0;
+  padding: 2%;
+  margin-top: 2%;
+  border-radius: 0.25em 0.25em 0.25em 0.25em;
+  right: 26px;
+}
+
+.flex_card_responsive {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.bg_color_dark {
+  background-color: #353535;
+  padding: 3%;
+  justify-content: space-around;
+}
+
+.color__white {
+  color: white;
+}
+
+.white {
+  width: 30%;
+  filter: invert(100%);
+  height: 40px;
+}
+
+.flex_footer {
+  display: flex;
+  justify-content: end;
+  flex-direction: row-reverse;
+}
+
+.numero_rounded {
+  border-radius: 50%;
+  background-color: #9356DC;
+  width: 7%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  color: white;
+  position: absolute;
+  left: -1rem;
+}
+
+.position_icon {
+  position: absolute;
+  left: 61px;
+  color: #8d8d8d;
+}
+
+.position_icon:hover {
+  transform: scale(1.15);
+  color: #9356DC;
+}
+
+.Restaurant {
+  background: #F6F6F6;
+}
+
+.position_icon_heart {
+  position: absolute;
+  right: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  transition-property: transform;
+}
+.position_icon_heart > .full_heart {
+  display: none;
+  color: transparent;
+  background-image: linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.position_icon_heart:hover > .empty_heart {
+  display: none;
+}
+.position_icon_heart:hover > .full_heart {
+  display: block;
+  animation: "bgcolor" 2s;
+  transition: transform 2000ms;
+}
+
+@keyframes bgcolor {
+  0% {
+    color: transparent;
+    background-image: linear-gradient(#9356DC, #FF79DA);
+    background-clip: text;
+    -webkit-background-clip: text;
+    opacity: 0.2;
+  }
+  30% {
+    color: transparent;
+    background-image: linear-gradient(#9356DC, #FF79DA);
+    background-clip: text;
+    -webkit-background-clip: text;
+    opacity: 0.4;
+  }
+  50% {
+    color: transparent;
+    background-image: linear-gradient(#9356DC, #FF79DA);
+    background-clip: text;
+    -webkit-background-clip: text;
+    opacity: 0.6;
+  }
+  80% {
+    color: transparent;
+    background-image: linear-gradient(#9356DC, #FF79DA);
+    background-clip: text;
+    -webkit-background-clip: text;
+    opacity: 0.8;
+  }
+  100% {
+    color: transparent;
+    background-image: linear-gradient(#9356DC, #FF79DA);
+    background-clip: text;
+    -webkit-background-clip: text;
+    opacity: 1;
+  }
+}
+.card_description {
+  position: relative;
+}
+
+.fa-heart {
+  font-size: 2rem;
+}
+
+.text_deco {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.margin {
+  margin: 2%;
+}
+
+.padding {
+  padding: 2%;
+}
+
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  background-color: #ffffff;
+  height: 100vh;
+  inset: 0;
+  z-index: 1;
+  opacity: 0.9;
+  animation: "disappear" 200ms;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+  transform-origin: top;
+}
+.loader::after {
+  content: "";
+  height: 100px;
+  width: 100px;
+  border: 5px solid transparent;
+  border-top: 5px solid #9356DC;
+  border-bottom: 5px solid #FF79DA;
+  border-radius: 50%;
+  animation: spin 3s infinite linear;
+}
+
+@keyframes disappear {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.position_footer {
+  display: flex;
+  gap: 1em;
+  order: 2;
+  padding-right: 4%;
+}
+
+.position_footer_2 {
+  display: flex;
+  gap: 1em;
+  order: 1;
+  padding-right: 4%;
+}
+
 @media (max-width: 500px) {
   .navbar {
     text-align: center;
@@ -9,15 +305,13 @@
   }
   .localisation {
     display: flex;
-    flex-direction: row;
     background-color: #EAEAEA;
+    align-items: center;
     justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    padding: 0.5rem;
     border-top: solid #D6D6D6;
-  }
-  .localisation .localisation__logo {
-    height: 30px;
-    padding-top: 5%;
-    padding-right: 5%;
   }
   .w_full {
     width: 100%;
@@ -37,6 +331,10 @@
     font-size: 16px;
     width: 65%;
   }
+  .bouton:hover {
+    box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.4);
+    background: linear-gradient(356deg, #a061de 0%, #ac87da 33%, #ff83dd 100%);
+  }
   .explorer {
     background-color: #F6F6F6;
     padding-bottom: 15%;
@@ -50,6 +348,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 90%;
+    position: initial;
   }
   .card {
     background-color: white;
@@ -57,10 +357,11 @@
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
     padding-bottom: 1%;
     margin: 3%;
+    width: 95%;
+    display: block;
   }
   .card .card__img {
     height: 250px;
-    width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
     border-radius: 1rem 1rem 0 0;
@@ -106,32 +407,144 @@
   }
   .position_icon {
     position: absolute;
-    left: 68px;
+    left: 61px;
     color: #8d8d8d;
   }
   .position_icon:hover {
-    color: #9356DC;
     transform: scale(1.15);
+    color: #9356DC;
   }
   .position_icon_heart {
     position: absolute;
-    right: 50px;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
     transition-property: transform;
   }
+  .position_icon_heart > .full_heart {
+    display: none;
+    color: transparent;
+    background-image: linear-gradient(#9356DC, #FF79DA);
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+  .position_icon_heart:hover > .empty_heart {
+    display: none;
+  }
+  .position_icon_heart:hover > .full_heart {
+    display: block;
+    animation: "bgcolor" 2s;
+    transition: transform 2000ms;
+  }
+  @keyframes bgcolor {
+    0% {
+      color: transparent;
+      background-image: linear-gradient(#9356DC, #FF79DA);
+      background-clip: text;
+      -webkit-background-clip: text;
+      opacity: 0.2;
+    }
+    30% {
+      color: transparent;
+      background-image: linear-gradient(#9356DC, #FF79DA);
+      background-clip: text;
+      -webkit-background-clip: text;
+      opacity: 0.4;
+    }
+    50% {
+      color: transparent;
+      background-image: linear-gradient(#9356DC, #FF79DA);
+      background-clip: text;
+      -webkit-background-clip: text;
+      opacity: 0.6;
+    }
+    80% {
+      color: transparent;
+      background-image: linear-gradient(#9356DC, #FF79DA);
+      background-clip: text;
+      -webkit-background-clip: text;
+      opacity: 0.8;
+    }
+    100% {
+      color: transparent;
+      background-image: linear-gradient(#9356DC, #FF79DA);
+      background-clip: text;
+      -webkit-background-clip: text;
+      opacity: 1;
+    }
+  }
   .heart_icon {
-    transition-property: transform;
-    transition-duration: 400ms;
+    background: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
   }
   .position_icon_heart_bis {
     position: absolute;
     right: 50px;
     transition-property: transform;
   }
-  .heart_icon_full {
-    visibility: hidden;
-    color: #9356DC;
+  .flex_card_responsive {
+    display: block;
   }
-  .heart_icon_full:active {
-    visibility: visible;
+  .flex_responsive {
+    display: block;
+  }
+  .flex_footer {
+    display: block;
+  }
+  .loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    background-color: #ffffff;
+    height: 100vh;
+    inset: 0;
+    z-index: 1;
+    opacity: 0.9;
+    animation: "disappear" 200ms;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+    transform-origin: top;
+  }
+  .loader::after {
+    content: "";
+    height: 100px;
+    width: 100px;
+    border: 5px solid transparent;
+    border-top: 5px solid #9356DC;
+    border-bottom: 5px solid #FF79DA;
+    border-radius: 50%;
+    animation: spin 3s infinite linear;
+  }
+  @keyframes disappear {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0);
+    }
+  }
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  .card_description {
+    position: relative;
+  }
+  .padding {
+    padding-top: 4%;
+  }
+  .margin {
+    margin: 5%;
+  }
+  .fa-heart {
+    font-size: 2rem;
+  }
+  .txt {
+    padding-top: 0.5rem;
+  }
+  .text_deco {
+    text-decoration: none;
+    font-weight: bold;
   }
 }/*# sourceMappingURL=main.css.map */
