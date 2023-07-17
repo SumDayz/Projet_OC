@@ -119,7 +119,7 @@ position: relative;
     }
     > .full_heart {
       display: block;
-      animation: "bgcolor" 2s;
+      animation: bgcolor 2s;
       transition: transform 2000ms;
       
       
@@ -173,7 +173,7 @@ position: relative;
   inset: 0;
   z-index: 1;
   opacity: 0.9;
-  animation: "disappear" 200ms;
+  animation: disappear 200ms;
   animation-delay: 5s;
   animation-fill-mode: forwards;
   transform-origin:top ;
@@ -360,7 +360,7 @@ position: relative;
             }
             > .full_heart {
               display: block;
-              animation: "bgcolor" 2s;
+              animation: bgcolor 2s;
               transition: transform 2000ms;
               
               
@@ -414,7 +414,7 @@ position: relative;
           inset: 0;
           z-index: 1;
           opacity: 0.9;
-          animation: "disappear" 200ms;
+          animation: disappear 200ms;
           animation-delay: 5s;
           animation-fill-mode: forwards;
           transform-origin:top ;
