@@ -16,7 +16,7 @@
 }
 .position_icon_heart_resto:hover > .full_heart {
   display: block;
-  animation: bgcolor 2s;
+  animation: "bgcolor" 2s;
   transition: transform 2000ms;
 }
 
@@ -373,5 +373,8 @@
   }
   .delay_8 {
     animation-delay: 0.8s;
+  }
+  .delay_9 {
+    animation-delay: 0.9s;
   }
 }/*# sourceMappingURL=resto.css.map */

@@ -119,6 +119,7 @@ position: relative;
     }
     > .full_heart {
       display: block;
+      -webkit-animation: bgcolor 2s;
       animation: bgcolor 2s;
       transition: transform 2000ms;
       
@@ -173,8 +174,13 @@ position: relative;
   inset: 0;
   z-index: 1;
   opacity: 0.9;
-  animation: disappear 200ms;
+  animation-duration: 200ms;
+  -webkit-animation-duration: 200ms;
   animation-delay: 5s;
+  -webkit-animation-delay: 5s;
+  animation-name: disappear;
+  -webkit-animation-name: disappear; 
+  -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   transform-origin:top ;
   &::after{
@@ -191,6 +197,7 @@ position: relative;
 @keyframes disappear {
   0%{
     transform:scale(1)
+    
   }
   100%{
     transform: scale(0)
@@ -360,6 +367,7 @@ position: relative;
             }
             > .full_heart {
               display: block;
+              -webkit-animation: bgcolor 2s;
               animation: bgcolor 2s;
               transition: transform 2000ms;
               
@@ -404,6 +412,14 @@ position: relative;
             opacity: (1);
           }
          }
+         @keyframes disappear {
+          0%{
+            transform:scale(1)
+          }
+          100%{
+            transform: scale(0)
+          }
+        }
          .loader{
           display: flex;
           align-items: center;
@@ -414,8 +430,13 @@ position: relative;
           inset: 0;
           z-index: 1;
           opacity: 0.9;
-          animation: disappear 200ms;
+          animation-duration: 200ms;
+          -webkit-animation-duration: 200ms;
           animation-delay: 5s;
+          -webkit-animation-delay: 5s;
+          animation-name: disappear;
+          -webkit-animation-name: disappear; 
+          -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
           transform-origin:top ;
           &::after{
@@ -429,14 +450,7 @@ position: relative;
             animation: spin 3s infinite linear;
           }
         }
-        @keyframes disappear {
-          0%{
-            transform:scale(1)
-          }
-          100%{
-            transform: scale(0)
-          }
-        }
+        
         @keyframes spin {
           to{
             transform: rotate(360deg);
