@@ -16,7 +16,7 @@
 }
 .position_icon_heart_resto:hover > .full_heart {
   display: block;
-  animation: "bgcolor" 2s;
+  animation: bgcolor 2s;
   transition: transform 2000ms;
 }
 
